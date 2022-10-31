@@ -13,9 +13,9 @@ class FactorialMethodSourceParametrizedTesting {
     Factorial factorial = new Factorial();
 
     static Stream<Arguments> testCases(){
-        return Stream.of(Arguments.of("2", "2"),
-                Arguments.of("7", "5040"),
-                Arguments.of("3", "6"));
+        return Stream.of(Arguments.of("1", "1"),
+                Arguments.of("2", "2"),
+                Arguments.of("5", "120"));
     }
     @ParameterizedTest
     @MethodSource("testCases")
